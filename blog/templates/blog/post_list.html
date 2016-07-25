@@ -4,21 +4,15 @@
     </head>
     <body>
         <div>
-            <h1><a href="">Project 1</a></h1>
-        </div>
+    <h1><a href="/">JaeKoo's Blog</a></h1>
+</div>
 
-    {% for post in posts %}
-        <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-
-        <div>
-            <p>published: 25.07.2016, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Ru, Song, Lee Project</p>
-        </div>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
     </body>
 </html>
